@@ -1,7 +1,7 @@
 /// @description Fireball Data
 //Create Event (Fireball)
 direction = point_direction(x,y,mouse_x,mouse_y)
-direction = direction + random_range(-16,16);
+direction = direction //+ random_range(-16,16);
 speed = 16;
 image_angle = direction;
 var layr=layer_get_id("Layer_Bound");

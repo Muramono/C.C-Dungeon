@@ -2,8 +2,8 @@
 //Fireball Creation (Step Pl)
 if (mouse_check_button(mb_left)) && (cooldown<1)
 {
-	instance_create_layer(x,y,"La_Fireball",Obj_Fireball)
-	cooldown = 5;
+	instance_create_layer(x,y-64,"La_Fireball",Obj_Fireball)
+	cooldown = 60;
 }
 cooldown -= 1;
 //Finding boundary boxs
