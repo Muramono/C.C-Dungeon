@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "317a899f-1733-49a1-a20e-995078ebf952",
+            "Value": {
+                "id": "b828ce69-bf7e-4d73-91d3-c1a06fac6bee",
+                "resourcePath": "objects\\Obj_Fireball\\Obj_Fireball.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "33453866-0c01-4546-9d38-19ed67eaec86",
             "Value": {
                 "id": "d4be1c75-fa91-4028-9b7d-ff634ebaf844",
@@ -212,6 +220,14 @@
                 "id": "9271cddb-7bb6-495d-a421-98ce5f3c3e27",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cd809031-8d9d-402f-b11c-6d1bb22a4d02",
+            "Value": {
+                "id": "5114ea68-4441-471f-ad6c-423075630cd6",
+                "resourcePath": "sprites\\Spr_Fireball\\Spr_Fireball.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

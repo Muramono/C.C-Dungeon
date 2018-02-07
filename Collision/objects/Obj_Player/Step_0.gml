@@ -1,6 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
 
+//Fireball Creation (Step Pl)
+if (mouse_check_button(mb_left)) && (cooldown<1)
+{
+	instance_create_layer(x,y,"La_Fireball",Obj_Fireball)
+	cooldown = 5;
+}
+cooldown -= 1;
 //Finding boundary boxs
 	var c1=tilemap_get_at_pixel(tilemap,bbox_left,bbox_bottom+1) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom+1) & tile_index_mask;
