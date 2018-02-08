@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "3f9df948-d248-48d7-b2ac-4854ccfd108d",
+            "Value": {
+                "id": "01e245d3-6aa7-4450-90f6-5ad2128a1b1d",
+                "resourcePath": "objects\\Obj_PlSwing\\Obj_PlSwing.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4397b708-bf7d-4220-8081-8da5400161d2",
             "Value": {
                 "id": "246cb45a-fd1c-44fa-83e7-8ad76a0ea391",

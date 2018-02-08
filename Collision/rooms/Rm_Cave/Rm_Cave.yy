@@ -19,7 +19,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -90,7 +90,7 @@
             },
             "tilesetId": "4ccf9db5-7153-4069-9511-5227d89227b1",
             "userdefined_depth": false,
-            "visible": true,
+            "visible": false,
             "x": 0,
             "y": 0
         },

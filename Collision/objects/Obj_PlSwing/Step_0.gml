@@ -1,9 +1,7 @@
-//Slashing Animation 
+//Reversion back to static character
 
-if(mouse_check_button(mb_left)){
-	instance_change(Obj_PlSwing,true);
-}
-
+if(mouse_check_button_released(mb_left))
+instance_change(Obj_Player,true);
 //Fireball Creation (Step Pl)
 if (keyboard_check(ord("Q")) && cooldown<1)
 {
@@ -62,41 +60,7 @@ if(xx<0){
 else {
 	var c1=tilemap_get_at_pixel(tilemap,bbox_right,bbox_top) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom) & tile_index_mask;
-		if(c1!=0||c2!=0){
-			x+=((bbox_right & ~127)-1)-bbox_right;
-		}
-}
-
-//Water Death Collision
-
-
-//Vertical collisions
-if(yy<0){
-	var c1=tilemap_get_at_pixel(tilemapD,bbox_left,bbox_top) & tile_index_mask;
-	var c2=tilemap_get_at_pixel(tilemapD,bbox_right,bbox_top) & tile_index_mask;
-	if(c1!=0||c2!=0){
-		game_restart();
-	}
-} 
-else {
-	var c1=tilemap_get_at_pixel(tilemapD,bbox_left,bbox_bottom) & tile_index_mask;
-	var c2=tilemap_get_at_pixel(tilemapD,bbox_right,bbox_bottom) & tile_index_mask;
-		if(c1!=0||c2!=0){
-			game_restart();
-		}
-}
-//Horizontal collisions
-if(xx<0){
-	var c1=tilemap_get_at_pixel(tilemapD,bbox_left,bbox_top) & tile_index_mask;
-	var c2=tilemap_get_at_pixel(tilemapD,bbox_left,bbox_bottom) & tile_index_mask;
-		if(c1!=0||c2!=0){
-			game_restart();
-		}
-}
-else {
-	var c1=tilemap_get_at_pixel(tilemapD,bbox_right,bbox_top) & tile_index_mask;
-	var c2=tilemap_get_at_pixel(tilemapD,bbox_right,bbox_bottom) & tile_index_mask;
 			if(c1!=0||c2!=0){
-				game_restart();
+				x+=((bbox_right & ~127)-1)-bbox_right;
 			}	
 }
