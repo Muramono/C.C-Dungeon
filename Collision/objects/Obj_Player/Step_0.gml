@@ -1,8 +1,14 @@
+//Slashing Animation
+
 
 //Fireball Creation (Step Pl)
-if (mouse_check_button(mb_left)) && (cooldown<1)
+if (keyboard_check(ord("Q")) && cooldown<1)
 {
+	//show_message(string(point_direction(x,y,mouse_x,mouse_y)));
+	if(image_xscale>0)
 	instance_create_layer(x,y-64,"La_Fireball",Obj_Fireball)
+	if(image_xscale<0)
+	instance_create_layer(x,y+64,"La_Fireball",Obj_Fireball)
 	cooldown = 60;
 }
 cooldown -= 1;

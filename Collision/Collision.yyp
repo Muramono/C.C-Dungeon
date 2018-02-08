@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "5e122715-6a4b-423e-bd59-8b87b9521ed9",
+            "Value": {
+                "id": "cc924148-3522-40c2-86c7-b279f7dfec9a",
+                "resourcePath": "sprites\\Spr_Walking\\Spr_Walking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "69a42c24-72f1-4556-bf23-9ff0b4ae405f",
             "Value": {
                 "id": "f7357910-9393-47e0-a15b-e31504841141",
