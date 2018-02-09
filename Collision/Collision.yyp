@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "041ee940-aa4a-494c-a397-a15047cd20d2",
+            "Value": {
+                "id": "fa6db9b7-1a3a-4f48-b7d8-755676ff6444",
+                "resourcePath": "objects\\Obj_PlDeath\\Obj_PlDeath.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0a9bbd42-a66d-4226-b59e-601f958145e6",
             "Value": {
                 "id": "88f34cdc-602f-4929-8404-1c2c37090594",
@@ -114,7 +122,7 @@
             "Key": "3f9df948-d248-48d7-b2ac-4854ccfd108d",
             "Value": {
                 "id": "01e245d3-6aa7-4450-90f6-5ad2128a1b1d",
-                "resourcePath": "objects\\Obj_PlSwing\\Obj_PlSwing.yy",
+                "resourcePath": "objects\\Obj_PlSlash\\Obj_PlSlash.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -138,7 +146,7 @@
             "Key": "5e122715-6a4b-423e-bd59-8b87b9521ed9",
             "Value": {
                 "id": "cc924148-3522-40c2-86c7-b279f7dfec9a",
-                "resourcePath": "sprites\\Spr_Walking\\Spr_Walking.yy",
+                "resourcePath": "sprites\\Spr_Slashing\\Spr_Slashing.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -194,7 +202,15 @@
             "Key": "98e82956-18b1-4a0b-ada1-88eb6f143117",
             "Value": {
                 "id": "20f7cc68-4ac7-4f16-b494-2c5dca2d7588",
-                "resourcePath": "sprites\\Spr_TestSprite\\Spr_TestSprite.yy",
+                "resourcePath": "sprites\\Spr_Player\\Spr_Player.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9c9fc29e-ccb8-4cdd-9bb0-1d8409ab74a8",
+            "Value": {
+                "id": "83d14a0a-39e0-40b8-a757-767c0d237e0b",
+                "resourcePath": "sprites\\Spr_Death\\Spr_Death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -279,6 +295,14 @@
             }
         },
         {
+            "Key": "e4c0745e-b4c7-4066-8405-8c3acdba1f7d",
+            "Value": {
+                "id": "cddca9ab-cb1d-4aba-ba56-de189a224002",
+                "resourcePath": "fonts\\Ft_DeathMsg\\Ft_DeathMsg.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "e768c891-6a7e-4ff4-a430-dc2b971db63a",
             "Value": {
                 "id": "fb91528f-e74b-47cf-8f5f-b0ebd915b8fd",
@@ -290,7 +314,7 @@
             "Key": "e828d3d0-1ea1-405d-80f6-caf59c0f9574",
             "Value": {
                 "id": "f7a6fec5-d975-40c1-85c1-c579bd1878b1",
-                "resourcePath": "sprites\\Spr_Player\\Spr_Player.yy",
+                "resourcePath": "sprites\\Spr_TestPl\\Spr_TestPl.yy",
                 "resourceType": "GMSprite"
             }
         },

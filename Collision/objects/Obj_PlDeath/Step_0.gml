@@ -1,39 +1,7 @@
-
-//Slashing Animation 
-if(mouse_check_button(mb_left)){
-	instance_change(Obj_PlSlash,true);
+//Stops Death Frame
+if(image_index == 8){
+	image_speed = 0;
 }
-
-//Fireball Creation (Step Pl)
-if (keyboard_check(ord("Q")) && cooldown<1)
-{
-	//show_message(string(point_direction(x,y,mouse_x,mouse_y)));
-	if(image_xscale>0)
-	instance_create_layer(x,y-64,"La_Fireball",Obj_Fireball)
-	if(image_xscale<0)
-	instance_create_layer(x,y+64,"La_Fireball",Obj_Fireball)
-	cooldown = 60;
-}
-cooldown -= 1;
-//Finding boundary boxs
-	var c1=tilemap_get_at_pixel(tilemap,bbox_left,bbox_bottom+1) & tile_index_mask;
-	var c2=tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom+1) & tile_index_mask;
-//Keyboard check and movement input
-	if(c1!=0||c2!=0){
-		if(keyboard_check(ord("W"))){
-		v_speed = -jump_impluse;
-		}
-	}
-	if(keyboard_check_pressed(ord("A"))&&image_xscale>0){
-		image_xscale *= -1;
-	}
-		if(keyboard_check_pressed(ord("D"))&& image_xscale<0){
-		image_xscale *= -1;
-	}
-yy=v_speed;
-xx=spd*(keyboard_check(ord("D"))-keyboard_check(ord("A")));
-v_speed += grav;
-y+=yy;
 //Vertical collisions
 if(yy<0){
 	var c1=tilemap_get_at_pixel(tilemap,bbox_left,bbox_top) & tile_index_mask;
