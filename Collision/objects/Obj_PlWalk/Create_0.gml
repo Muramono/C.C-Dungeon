@@ -1,4 +1,4 @@
-camera_set_view_target(view_camera[0],Obj_Player);
+camera_set_view_target(view_camera[0],Obj_PlWalk);
 //Tile Info
 var layr=layer_get_id("Layer_Bound");
 tilemap=layer_tilemap_get_id(layr);

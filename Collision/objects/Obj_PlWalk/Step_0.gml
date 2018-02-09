@@ -18,11 +18,18 @@ cooldown -= 1;
 //Finding boundary boxs
 	var c1=tilemap_get_at_pixel(tilemap,bbox_left,bbox_bottom+1) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom+1) & tile_index_mask;
-//Movement Animation Obj Switch
-if(!keyboard_check(ord("W"))){
-if((keyboard_check(ord("A")) or keyboard_check(ord("D"))) and (c1!=0)){
-	instance_change(Obj_PlWalk,true);	
+//Reversion Back To Static Movement
+if(keyboard_check(ord("W"))){
+	if(keyboard_check_released(ord("A")) and keyboard_check_released(ord("D"))){
+		instance_change(Obj_Player,true);	
+	}
+	if(keyboard_check_released(ord("W")))
+	instance_change(Obj_Player,true);
 }
+else{
+	if(keyboard_check_released(ord("A")) or keyboard_check_released(ord("D"))){
+		instance_change(Obj_Player,true);	
+	}
 }
 //Keyboard check and movement input
 	if(c1!=0||c2!=0){

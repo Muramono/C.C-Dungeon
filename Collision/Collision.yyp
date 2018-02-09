@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "399f9d92-0fbb-4965-981f-a534afdb9124",
+            "Value": {
+                "id": "f7a64e93-5f32-490e-8522-6289738fd199",
+                "resourcePath": "sprites\\Spr_Walking\\Spr_Walking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e34ea65-b1de-4825-af74-09fb756acb1f",
             "Value": {
                 "id": "f17788a3-5427-4db8-b2cf-1c2154b67b51",
@@ -172,6 +180,14 @@
                 "id": "dd0deab6-602b-4cc0-a8d1-8110f533ce54",
                 "resourcePath": "sprites\\Spr_Cave\\Spr_Cave.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89effe2f-b281-431c-ab8d-04951929a090",
+            "Value": {
+                "id": "09a817b2-106d-4648-8bf6-663973c9f5fb",
+                "resourcePath": "objects\\Obj_PlWalk\\Obj_PlWalk.yy",
+                "resourceType": "GMObject"
             }
         },
         {
