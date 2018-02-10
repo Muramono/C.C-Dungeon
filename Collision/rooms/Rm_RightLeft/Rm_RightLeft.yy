@@ -7,7 +7,8 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "8564f8ae-b515-4e82-8dc7-2b59e48c5ded"
+        "8564f8ae-b515-4e82-8dc7-2b59e48c5ded",
+        "55d6087c-28c4-43db-9fc1-79ef56e08ee8"
     ],
     "IsDnD": false,
     "layers": [
@@ -121,7 +122,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_49D49472","id": "8564f8ae-b515-4e82-8dc7-2b59e48c5ded","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_49D49472","objId": "c9c7499d-c1e9-43f9-be5e-2de4dfb9f153","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 256,"y": 384}
+{"name": "inst_49D49472","id": "8564f8ae-b515-4e82-8dc7-2b59e48c5ded","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_49D49472","objId": "c9c7499d-c1e9-43f9-be5e-2de4dfb9f153","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 256,"y": 384},
+{"name": "inst_D818A6E","id": "55d6087c-28c4-43db-9fc1-79ef56e08ee8","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_D818A6E","objId": "642b3372-1041-4491-bf8d-143731db8cd0","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1536,"y": 640}
             ],
             "layers": [
 
@@ -135,7 +137,7 @@
         },
         {
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Layer_Death",
+            "name": "Layer_Slow",
             "id": "73e9f48d-cdd9-4d66-a6df-50d1ff249025",
             "depth": 300,
             "grid_x": 32,

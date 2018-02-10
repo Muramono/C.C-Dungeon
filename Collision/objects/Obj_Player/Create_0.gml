@@ -1,14 +1,14 @@
-camera_set_view_target(view_camera[0],Obj_Player);
+//camera_set_view_target(view_camera[0],Obj_Player);
 //Tile Info
 var layr=layer_get_id("Layer_Bound");
 tilemap=layer_tilemap_get_id(layr);
 
-var layrD=layer_get_id("Layer_Death");
-tilemapD=layer_tilemap_get_id(layrD);
+var layrS=layer_get_id("Layer_Slow");
+tilemapS=layer_tilemap_get_id(layrS);
 
 cooldown=0;
 //Player Grav/Move Info
-spd=15;
+spd=10;
 xx=0;
 yy=0;
 sprMask=Spr_Player;
