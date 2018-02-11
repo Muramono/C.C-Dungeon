@@ -1,4 +1,6 @@
-//camera_set_view_target(view_camera[0],Obj_Player);
+//Player Data
+Pl_Hp = 200;
+Pl_MaxHp = 200;
 //Tile Info
 var layr=layer_get_id("Layer_Bound");
 tilemap=layer_tilemap_get_id(layr);

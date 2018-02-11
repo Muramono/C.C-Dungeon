@@ -1,4 +1,5 @@
-
+//Slime Data
+Sl_Hp = 120;
 //Tile Info
 var layr=layer_get_id("Layer_Bound");
 tilemapSl=layer_tilemap_get_id(layr);

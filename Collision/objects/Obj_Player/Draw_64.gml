@@ -1,0 +1,1 @@
+draw_healthbar(32,32,384,64,PercHel,c_black,c_red,c_lime,0,true,true);

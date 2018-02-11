@@ -1,3 +1,8 @@
+//Health Var
+PercHel = (Pl_Hp / Pl_MaxHp ) * 100;
+//Death Restart
+if(Pl_Hp <= 0 )
+game_restart();
 //Animation Changing
 if(!keyboard_check(ord("A")) or !keyboard_check(ord("D"))){
 		if(image_index == 3){
@@ -91,6 +96,11 @@ if(yy<0){
 	var c2=tilemap_get_at_pixel(tilemapS,bbox_right,bbox_top) & tile_index_mask;
 	if(c1!=0||c2!=0){
 		spd = 5;
+		jump_impluse = 50;
+	}
+	if(c1==0 and c2==0){
+		spd = 10;
+		jump_impluse = 26;
 	}
 } 
 else {
@@ -98,6 +108,11 @@ else {
 	var c2=tilemap_get_at_pixel(tilemapS,bbox_right,bbox_bottom) & tile_index_mask;
 	if(c1!=0||c2!=0){
 		spd = 5;
+		jump_impluse = 50;
+	}
+	if(c1==0 and c2==0){
+		spd = 10;
+		jump_impluse = 26;
 	}
 }
 //Horizontal collisions
@@ -106,12 +121,22 @@ if(xx<0){
 	var c2=tilemap_get_at_pixel(tilemapS,bbox_left,bbox_bottom) & tile_index_mask;
 	if(c1!=0||c2!=0){
 		spd = 5;
+		jump_impluse = 50;
+	}
+	if(c1==0 and c2==0){
+		spd = 10;
+		jump_impluse = 26;
 	}
 }
 else {
 	var c1=tilemap_get_at_pixel(tilemapS,bbox_right,bbox_top) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapS,bbox_right,bbox_bottom) & tile_index_mask;
 	if(c1!=0||c2!=0){
+		jump_impluse = 50;
 		spd = 5;
 	}	
+	if(c1==0 and c2==0){
+		spd = 10;
+		jump_impluse = 26;
+	}
 }
