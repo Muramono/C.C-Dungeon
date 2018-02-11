@@ -1,8 +1,11 @@
+//Slime Movement
+if(instance_exists(Obj_Player)){
+		move_towards_point(Obj_Player.x,Obj_Player.y+64,spdSl);
+}
 //Slime Destruction
 if(Sl_Hp <= 0)
 instance_destroy();
 yySl=v_speedSl;
-//xxSl=spdSl*(keyboard_check(ord("D"))-keyboard_check(ord("A")));
 v_speedSl += gravSl;
 y+=yySl;
 //Vertical collisions
