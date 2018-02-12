@@ -1,24 +1,34 @@
 xxSl = 0;
+yySl = 0;
 //Jump Impluse
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_bottom+1) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_bottom+1) & tile_index_mask;
-if(c1!=0||c2!=0){
-	if(Obj_Player.y < (y-32) and Obj_Player.y + 350 >= y){
-		v_speedSl = -jump_impluseSl;
+/*if(c1!=0||c2!=0){
+	if(Obj_Player.y > (y+32)){
+		v_speedSl = jump_impluseSl;
 	}
-}
+}*/
 //Slime Destruction
 if(Sl_Hp <= 0)
 instance_destroy();
+/*
 yySl=v_speedSl;
-v_speedSl += gravSl;
+v_speedSl -= gravSl;
 y+=yySl;
+*/
 if(Obj_Player.x < x and Obj_Player.x + 350 >= x)
 xxSl = -spdSl;
 if(Obj_Player.x > x and Obj_Player.x - 350 <= x)
 xxSl = spdSl;
 if(Obj_Player.x > x-5 and Obj_Player.x < x+5 )
 xxSl = 0;
+if(Obj_Player.y < y and (Obj_Player.y + 350 >= y ))
+yySl = -spdSl;
+if(Obj_Player.y > y and (Obj_Player.y - 350 <= y ))
+yySl = spdSl;
+if(Obj_Player.y > y-5 and Obj_Player.y < y+5)
+yySl = 0;
+y+=yySl
 //Vertical collisions
 if(yySl<0){
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_top) & tile_index_mask;

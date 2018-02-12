@@ -23,6 +23,11 @@ cooldown -= 1;
 //Finding boundary boxs
 	var c1=tilemap_get_at_pixel(tilemap,bbox_left,bbox_bottom+1) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom+1) & tile_index_mask;
+	//Checking Top/Bottom boundaries for water blocks
+	var cw1 = tilemap_get_at_pixel(tilemapS,bbox_left,bbox_top) & tile_index_mask;
+	var cw2 = tilemap_get_at_pixel(tilemapS,bbox_right,bbox_top) & tile_index_mask;
+	var cw3 = tilemap_get_at_pixel(tilemapS,bbox_left,bbox_bottom) & tile_index_mask;
+	var cw4 = tilemap_get_at_pixel(tilemapS,bbox_right,bbox_bottom) & tile_index_mask;
 //Movement Animation Obj Switch
 //Walking Switch
 	if(keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D"))) 
@@ -39,11 +44,11 @@ cooldown -= 1;
 	if(mouse_check_button_released(mb_left))
 	image_index = 0;
 //Keyboard check and movement input
-	if(c1!=0||c2!=0){
-		if(keyboard_check(ord("W"))){
-		v_speed = -jump_impluse;
+		if((c1!=0||c2!=0) or ((cw1!=0 or cw2!=0) or (cw3!=0 or cw4!=0))){
+			if(keyboard_check(ord("W"))){
+			v_speed = -jump_impluse;
+			}
 		}
-	}
 	if(keyboard_check_pressed(ord("A"))&&image_xscale>0){
 		image_xscale *= -1;
 	}
@@ -95,10 +100,12 @@ if(yy<0){
 	var c1=tilemap_get_at_pixel(tilemapS,bbox_left,bbox_top) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapS,bbox_right,bbox_top) & tile_index_mask;
 	if(c1!=0||c2!=0){
+		grav = .1;
 		spd = 5;
-		jump_impluse = 50;
+		jump_impluse = 4;
 	}
 	if(c1==0 and c2==0){
+		grav = 1.3;
 		spd = 10;
 		jump_impluse = 26;
 	}
@@ -107,10 +114,12 @@ else {
 	var c1=tilemap_get_at_pixel(tilemapS,bbox_left,bbox_bottom) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapS,bbox_right,bbox_bottom) & tile_index_mask;
 	if(c1!=0||c2!=0){
+		grav = .1;
 		spd = 5;
-		jump_impluse = 50;
+		jump_impluse = 4;
 	}
 	if(c1==0 and c2==0){
+		grav = 1.3
 		spd = 10;
 		jump_impluse = 26;
 	}
@@ -120,10 +129,12 @@ if(xx<0){
 	var c1=tilemap_get_at_pixel(tilemapS,bbox_left,bbox_top) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapS,bbox_left,bbox_bottom) & tile_index_mask;
 	if(c1!=0||c2!=0){
+		grav = .1;
 		spd = 5;
-		jump_impluse = 50;
+		jump_impluse = 4;
 	}
 	if(c1==0 and c2==0){
+		grav = 1.3;
 		spd = 10;
 		jump_impluse = 26;
 	}
@@ -132,10 +143,12 @@ else {
 	var c1=tilemap_get_at_pixel(tilemapS,bbox_right,bbox_top) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapS,bbox_right,bbox_bottom) & tile_index_mask;
 	if(c1!=0||c2!=0){
-		jump_impluse = 50;
+		grav = .1;
+		jump_impluse = 4;
 		spd = 5;
 	}	
 	if(c1==0 and c2==0){
+		grav = 1.3;
 		spd = 10;
 		jump_impluse = 26;
 	}
