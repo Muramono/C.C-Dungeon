@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "7bb3785f-253a-4b18-820b-1b6f596d5b1b",
+            "Value": {
+                "id": "18cf1f70-301c-49a1-ada6-3186249af940",
+                "resourcePath": "sprites\\Spr_Bat\\Spr_Bat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7f1ebcf2-4364-4549-8d77-f29f622569c9",
             "Value": {
                 "id": "33e84399-43f7-400b-9ef4-dbaf7726fa45",
