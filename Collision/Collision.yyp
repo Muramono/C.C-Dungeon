@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "86185d31-ce73-496f-b615-c117f3f73d73",
+            "Value": {
+                "id": "293380b3-1905-4b33-bba5-846d28d8ed5c",
+                "resourcePath": "sprites\\Spr_Hydra\\Spr_Hydra.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "891bb3e9-84ea-4757-a08c-16ab878ebb56",
             "Value": {
                 "id": "dd0deab6-602b-4cc0-a8d1-8110f533ce54",
@@ -227,6 +235,14 @@
             "Value": {
                 "id": "7213a765-b706-4917-85c0-07c50eaabb44",
                 "resourcePath": "sprites\\Spr_Slime\\Spr_Slime.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8eb0fe8e-803f-4f6f-95e8-7856e1213517",
+            "Value": {
+                "id": "1c450746-8dd8-4ab3-a17f-db4ea9efcc2e",
+                "resourcePath": "sprites\\Spr_Knight\\Spr_Knight.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -364,6 +380,14 @@
                 "id": "7c7f4726-8499-430d-9de9-0c893ec31d35",
                 "resourcePath": "views\\d990225f-6f77-4fc4-9290-29492e8648b2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dfab5d6f-55af-46ed-8588-ddb04fd919fc",
+            "Value": {
+                "id": "04dfe584-6e49-4a14-8c5b-36dd32aeae8e",
+                "resourcePath": "sprites\\Spr_Minotaur\\Spr_Minotaur.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

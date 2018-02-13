@@ -3,7 +3,7 @@ xxSl = 0;
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_bottom+1) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_bottom+1) & tile_index_mask;
 if(c1!=0||c2!=0){
-	if(Obj_Player.y < (y-32) and Obj_Player.y + 350 >= y){
+	if(Obj_Player.y < (y-32) and Obj_Player.y + 400 >= y){
 		v_speedSl = -jump_impluseSl;
 	}
 }
@@ -13,9 +13,9 @@ instance_destroy();
 yySl=v_speedSl;
 v_speedSl += gravSl;
 y+=yySl;
-if(Obj_Player.x < x and Obj_Player.x + 350 >= x)
+if(Obj_Player.x < x and Obj_Player.x + 550 >= x)
 xxSl = -spdSl;
-if(Obj_Player.x > x and Obj_Player.x - 350 <= x)
+if(Obj_Player.x > x and Obj_Player.x - 550 <= x)
 xxSl = spdSl;
 if(Obj_Player.x > x-5 and Obj_Player.x < x+5 )
 xxSl = 0;

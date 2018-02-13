@@ -5,6 +5,7 @@ with(Obj_Player){
 			Sl_Hp -= 2
 	}
 	else {
+		if(Pl_Hp > 0)
 		Pl_Hp -= 2;
 	}
 }

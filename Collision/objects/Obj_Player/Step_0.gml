@@ -1,8 +1,6 @@
+
 //Health Var
 PercHel = (Pl_Hp / Pl_MaxHp ) * 100;
-//Death Restart
-if(Pl_Hp <= 0 )
-game_restart();
 //Animation Changing
 if(!keyboard_check(ord("A")) or !keyboard_check(ord("D"))){
 		if(image_index == 3){
@@ -12,12 +10,11 @@ if(!keyboard_check(ord("A")) or !keyboard_check(ord("D"))){
 //Fireball Creation (Step Pl)
 if (keyboard_check(ord("Q")) && cooldown<1)
 {
-	//show_message(string(point_direction(x,y,mouse_x,mouse_y)));
 	if(image_xscale>0)
 	instance_create_layer(x,y-64,"La_Fireball",Obj_Fireball)
 	if(image_xscale<0)
 	instance_create_layer(x,y+64,"La_Fireball",Obj_Fireball)
-	cooldown = 60;
+	cooldown = 520;
 }
 cooldown -= 1;
 //Finding boundary boxs
@@ -29,34 +26,46 @@ cooldown -= 1;
 	var cw3 = tilemap_get_at_pixel(tilemapS,bbox_left,bbox_bottom) & tile_index_mask;
 	var cw4 = tilemap_get_at_pixel(tilemapS,bbox_right,bbox_bottom) & tile_index_mask;
 //Movement Animation Obj Switch
+//Death Switch
+if(Pl_Hp <= 0){
+	if(image_index != 22 and image_index < 22)
+	image_index = 22;
+	if(image_index == 30) 	
+	image_speed = 0;
+	//Death Restart
+	if(keyboard_check(vk_enter))
+	game_restart();	
+}
 //Walking Switch
-	if(keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D"))) 
+	if((keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D"))) and Pl_Hp > 0) 
 	image_index = 4;
 	if( image_index == 11)
 	image_index = 4;
-	if(keyboard_check_released(ord("A")) or keyboard_check_released(ord("D")))
+	if((keyboard_check_released(ord("A")) or keyboard_check_released(ord("D"))) and Pl_Hp > 0)
 	image_index = 0;
 //Slashing Switch
-	if(mouse_check_button_pressed(mb_left))
+	if((mouse_check_button_pressed(mb_left)) and Pl_Hp > 0)
 	image_index = 12;
 	if(image_index == 21)
 	image_index = 12;
-	if(mouse_check_button_released(mb_left))
+	if((mouse_check_button_released(mb_left)) and Pl_Hp > 0)
 	image_index = 0;
 //Keyboard check and movement input
-		if((c1!=0||c2!=0) or ((cw1!=0 or cw2!=0) or (cw3!=0 or cw4!=0))){
+		if(((c1!=0||c2!=0) or ((cw1!=0 or cw2!=0) or (cw3!=0 or cw4!=0))) and Pl_Hp > 0){
 			if(keyboard_check(ord("W"))){
 			v_speed = -jump_impluse;
 			}
 		}
-	if(keyboard_check_pressed(ord("A"))&&image_xscale>0){
+	if((keyboard_check_pressed(ord("A")) and image_xscale>0) and Pl_Hp > 0){
 		image_xscale *= -1;
 	}
-		if(keyboard_check_pressed(ord("D"))&& image_xscale<0){
+		if((keyboard_check_pressed(ord("D")) and image_xscale<0) and Pl_Hp > 0){
 		image_xscale *= -1;
 	}
 yy=v_speed;
 xx=spd*(keyboard_check(ord("D"))-keyboard_check(ord("A")));
+if(Pl_Hp <= 0)
+xx = 0;
 v_speed += grav;
 y+=yy;
 //Vertical collisions
