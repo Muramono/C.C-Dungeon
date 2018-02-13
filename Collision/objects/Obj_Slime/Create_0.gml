@@ -8,7 +8,7 @@ tilemapSl=layer_tilemap_get_id(layr);
 var layrS=layer_get_id("Layer_Slow");
 tilemapS=layer_tilemap_get_id(layrS);
 //Player Grav/Move Info
-spdSl=4;
+spdSl=3;
 xxSl=0;
 yySl=0;
 sprMaskSl=Spr_Slime;

@@ -44,12 +44,17 @@ if(Pl_Hp <= 0){
 	if((keyboard_check_released(ord("A")) or keyboard_check_released(ord("D"))) and Pl_Hp > 0)
 	image_index = 0;
 //Slashing Switch
+if(SlashCd == 0){
 	if((mouse_check_button_pressed(mb_left)) and Pl_Hp > 0)
 	image_index = 12;
-	if(image_index == 21)
-	image_index = 12;
-	if((mouse_check_button_released(mb_left)) and Pl_Hp > 0)
+	if(image_index == 21){
 	image_index = 0;
+	SlashCd = 30;
+	}
+}
+//SlashCd Reset
+if(SlashCd > 0)
+	SlashCd -= 1;
 //Keyboard check and movement input
 		if(((c1!=0||c2!=0) or ((cw1!=0 or cw2!=0) or (cw3!=0 or cw4!=0))) and Pl_Hp > 0){
 			if(keyboard_check(ord("W"))){

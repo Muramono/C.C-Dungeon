@@ -17,7 +17,7 @@ if(Obj_Player.x < x and Obj_Player.x + 550 >= x)
 xxSl = -spdSl;
 if(Obj_Player.x > x and Obj_Player.x - 550 <= x)
 xxSl = spdSl;
-if(Obj_Player.x > x-5 and Obj_Player.x < x+5 )
+if(Obj_Player.x > x-40 and Obj_Player.x < x+40 )
 xxSl = 0;
 //Vertical collisions
 if(yySl<0){

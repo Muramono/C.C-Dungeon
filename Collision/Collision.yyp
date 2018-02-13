@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "88b3171d-d984-498b-aaef-687e79e2f3b5",
+            "Value": {
+                "id": "06cce7b1-2ebd-4cf1-93bd-9f8c10031ed3",
+                "resourcePath": "objects\\Obj_PlAttack\\Obj_PlAttack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "891bb3e9-84ea-4757-a08c-16ab878ebb56",
             "Value": {
                 "id": "dd0deab6-602b-4cc0-a8d1-8110f533ce54",
@@ -243,6 +251,14 @@
             "Value": {
                 "id": "1c450746-8dd8-4ab3-a17f-db4ea9efcc2e",
                 "resourcePath": "sprites\\Spr_Knight\\Spr_Knight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "92908a6d-518c-4f18-b5e0-65d3e7d1c7a0",
+            "Value": {
+                "id": "7eb3ecff-6009-4a06-a8f6-167d20e6205a",
+                "resourcePath": "sprites\\Spr_PlAttack\\Spr_PlAttack.yy",
                 "resourceType": "GMSprite"
             }
         },

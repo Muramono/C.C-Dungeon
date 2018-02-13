@@ -1,3 +1,10 @@
+//Knockback XX
+XX_K = 0;
+KnockSpeed = 21;
+SlashCd = 0;
+//Attack Collision Mask
+with (instance_create_layer(x,y,"Instances",Obj_PlAttack))
+master = other.id
 //Player Data
 Pl_Hp = 200;
 Pl_MaxHp = 200;

@@ -10,13 +10,13 @@ if(Obj_Player.x < x and Obj_Player.x + 550 >= x)
 xxSl = -spdSl;
 if(Obj_Player.x > x and Obj_Player.x - 550 <= x)
 xxSl = spdSl;
-if(Obj_Player.x > x-5 and Obj_Player.x < x+5 )
+if(Obj_Player.x > x-60 and Obj_Player.x < x+60 )
 xxSl = 0;
 if(Obj_Player.y < y and (Obj_Player.y + 400 >= y ))
 yySl = -spdSl;
 if(Obj_Player.y > y and (Obj_Player.y - 400 <= y ))
 yySl = spdSl;
-if(Obj_Player.y > y-5 and Obj_Player.y < y+5)
+if(Obj_Player.y > y-32 and Obj_Player.y < y+32)
 yySl = 0;
 y+=yySl
 //Vertical collisions
