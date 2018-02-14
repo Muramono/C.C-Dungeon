@@ -6,7 +6,8 @@
     "children": [
         "98e82956-18b1-4a0b-ada1-88eb6f143117",
         "e828d3d0-1ea1-405d-80f6-caf59c0f9574",
-        "92908a6d-518c-4f18-b5e0-65d3e7d1c7a0"
+        "92908a6d-518c-4f18-b5e0-65d3e7d1c7a0",
+        "d616c827-3d61-48f9-855b-4f89ff63fe75"
     ],
     "filterType": "GMSprite",
     "folderName": "MPlayer",

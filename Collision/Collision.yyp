@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "d616c827-3d61-48f9-855b-4f89ff63fe75",
+            "Value": {
+                "id": "3a124ad5-abb1-4eda-be7c-37971af74255",
+                "resourcePath": "sprites\\Spr_PlClAttack\\Spr_PlClAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d990225f-6f77-4fc4-9290-29492e8648b2",
             "Value": {
                 "id": "7c7f4726-8499-430d-9de9-0c893ec31d35",

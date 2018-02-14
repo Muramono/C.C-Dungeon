@@ -49,7 +49,6 @@ if(SlashCd == 0){
 	image_index = 12;
 	if(image_index == 21){
 	image_index = 0;
-	SlashCd = 30;
 	}
 }
 //SlashCd Reset
