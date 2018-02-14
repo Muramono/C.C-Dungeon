@@ -1,15 +1,28 @@
 xxSl = 0;
 yySl = 0;
+//Knocking Back 
+if(KnockingBack == true){
+if(Obj_Player.x < x)
+x += KnockSpeed;
+if(Obj_Player.x > x)
+x -= KnockSpeed;
+}
 //Jump Impluse
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_bottom+1) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_bottom+1) & tile_index_mask;
 //Slime Destruction
 if(Sl_Hp <= 0)
 instance_destroy();
-if(Obj_Player.x < x and Obj_Player.x + 550 >= x)
+if(Obj_Player.x < x and Obj_Player.x + 550 >= x){
 xxSl = -spdSl;
-if(Obj_Player.x > x and Obj_Player.x - 550 <= x)
+if(collision_point(x,y,Obj_Player,true,true))
+xxSl = 0;
+}
+if(Obj_Player.x > x and Obj_Player.x - 550 <= x){
 xxSl = spdSl;
+if(collision_point(x,y,Obj_Player,true,true))
+xxSl = 0;
+}
 if(Obj_Player.x > x-60 and Obj_Player.x < x+60 )
 xxSl = 0;
 if(Obj_Player.y < y and (Obj_Player.y + 400 >= y ))

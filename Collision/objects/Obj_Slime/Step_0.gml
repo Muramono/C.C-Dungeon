@@ -1,4 +1,11 @@
 xxSl = 0;
+//Knocking Back
+if(KnockingBack == true){
+if(Obj_Player.x < x)
+x += KnockSpeed;
+if(Obj_Player.x > x)
+x -= KnockSpeed;
+}
 //Jump Impluse
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_bottom+1) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_bottom+1) & tile_index_mask;

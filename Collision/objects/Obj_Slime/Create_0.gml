@@ -1,3 +1,6 @@
+//Knockback Data
+KnockSpeed = 20;
+KnockingBack = false;
 //Slime Data
 JumpCooldown = 0;
 Sl_Hp = 120;

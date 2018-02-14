@@ -56,7 +56,7 @@ if(SlashCd > 0)
 	SlashCd -= 1;
 //Keyboard check and movement input
 		if(((c1!=0||c2!=0) or ((cw1!=0 or cw2!=0) or (cw3!=0 or cw4!=0))) and Pl_Hp > 0){
-			if(keyboard_check(ord("W"))){
+			if(keyboard_check(ord("W")) or keyboard_check(vk_space)){
 			v_speed = -jump_impluse;
 			}
 		}
