@@ -1,7 +1,4 @@
 
-XX_K = 0;
-KnockSpeed = 5;
-SlashCd = 0;
 //Attack Collision Mask
 with (instance_create_layer(x,y,"Instances",Obj_PlAttack))
 master = other.id
