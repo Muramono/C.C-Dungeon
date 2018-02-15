@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "172b483f-4fdb-4837-b9e5-d0fb3179c1a8",
+            "Value": {
+                "id": "8af2f6f0-8118-465b-9b0c-bac2c06b916c",
+                "resourcePath": "rooms\\Rm_Tutorial\\Rm_Tutorial.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1c9f648e-6a65-4662-a550-e18b5d1da479",
             "Value": {
                 "id": "553f2e8e-9561-4ddf-8d47-02abbc9e7dd2",
@@ -130,7 +138,7 @@
             "Key": "3ec2fe5b-c7af-4db9-95ce-e3bd9023f985",
             "Value": {
                 "id": "2d8cc864-237d-4cb3-8ae3-09785064aadb",
-                "resourcePath": "rooms\\Rm_RightLeft\\Rm_RightLeft.yy",
+                "resourcePath": "rooms\\Rm_CaveLv\\Rm_CaveLv.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -172,6 +180,14 @@
                 "id": "0d566516-40e5-4ad3-9fba-14f672079cbd",
                 "resourcePath": "objects\\Obj_Slime\\Obj_Slime.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "691aa23c-f1e7-4eb6-8e1c-837836d5e5db",
+            "Value": {
+                "id": "53afcdea-d3c0-492b-8c3b-3068c2a1aa0b",
+                "resourcePath": "sprites\\Spr_Tut\\Spr_Tut.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -410,7 +426,7 @@
             "Key": "d5cc118c-f302-4557-98ba-d038555093ac",
             "Value": {
                 "id": "c601262c-9133-482c-bb78-cabeca73e451",
-                "resourcePath": "rooms\\Rm_BackroundTest\\Rm_BackroundTest.yy",
+                "resourcePath": "rooms\\Rm_DungeonLv\\Rm_DungeonLv.yy",
                 "resourceType": "GMRoom"
             }
         },
