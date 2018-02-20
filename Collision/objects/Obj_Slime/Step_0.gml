@@ -20,9 +20,9 @@ instance_destroy();
 yySl=v_speedSl;
 v_speedSl += gravSl;
 y+=yySl;
-if(Obj_Player.x < x and Obj_Player.x + 550 >= x)
+if(Obj_Player.x < x and Obj_Player.x + 650 >= x)
 xxSl = -spdSl;
-if(Obj_Player.x > x and Obj_Player.x - 550 <= x)
+if(Obj_Player.x > x and Obj_Player.x - 650 <= x)
 xxSl = spdSl;
 if(Obj_Player.x > x-40 and Obj_Player.x < x+40 )
 xxSl = 0;

@@ -4,7 +4,8 @@
     "mvc": "1.1",
     "name": "b0a529a3-3bd4-4a0e-ae8c-49aff918352f",
     "children": [
-        "cd809031-8d9d-402f-b11c-6d1bb22a4d02"
+        "cd809031-8d9d-402f-b11c-6d1bb22a4d02",
+        "2a03f25d-b3db-44c5-9fd8-aaf184054ed0"
     ],
     "filterType": "GMSprite",
     "folderName": "Projectiles",
