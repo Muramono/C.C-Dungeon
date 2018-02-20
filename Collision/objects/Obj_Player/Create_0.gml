@@ -1,4 +1,7 @@
-
+//Ability Booleans
+Ab_SpdPot = false;
+Ab_Fireball = false;
+Ab_Lightning = false;
 //Attack Collision Mask
 with (instance_create_layer(x,y,"Instances",Obj_PlAttack))
 master = other.id
@@ -12,7 +15,9 @@ tilemap=layer_tilemap_get_id(layr);
 var layrS=layer_get_id("Layer_Slow");
 tilemapS=layer_tilemap_get_id(layrS);
 
-cooldown=0;
+//Ability Cooldowns
+Fb_Cooldown=0;
+Lt_Cooldown=0;
 //Player Grav/Move Info
 spd=10;
 xx=0;

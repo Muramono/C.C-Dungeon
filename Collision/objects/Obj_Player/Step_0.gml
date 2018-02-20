@@ -7,16 +7,22 @@ if(!keyboard_check(ord("A")) or !keyboard_check(ord("D"))){
 			image_index = 0;	
 		}
 	}
+//Lightning Calldown
+if ((keyboard_check(ord("E")) and Lt_Cooldown<1) and Ab_Lightning == true){
+	instance_create_layer(mouse_x,y-128,"La_Fireball",Obj_Lightning);
+	Lt_Cooldown = 520;
+}
 //Fireball Creation (Step Pl)
-if (keyboard_check(ord("Q")) && cooldown<1)
+if ((keyboard_check(ord("Q")) and Fb_Cooldown<1) and Ab_Fireball == true)
 {
 	if(image_xscale>0)
 	instance_create_layer(x,y-64,"La_Fireball",Obj_Fireball)
 	if(image_xscale<0)
 	instance_create_layer(x,y+64,"La_Fireball",Obj_Fireball)
-	cooldown = 520;
+	Fb_Cooldown = 520;
 }
-cooldown -= 1;
+Fb_Cooldown -= 1;
+Lt_Cooldown -= 1;
 //Finding boundary boxs
 	var c1=tilemap_get_at_pixel(tilemap,bbox_left,bbox_bottom+1) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom+1) & tile_index_mask;
@@ -119,6 +125,7 @@ if(yy<0){
 	}
 	if(c1==0 and c2==0){
 		grav = 1.3;
+		if(Ab_SpdPot == false)
 		spd = 10;
 		jump_impluse = 26;
 	}
@@ -133,6 +140,7 @@ else {
 	}
 	if(c1==0 and c2==0){
 		grav = 1.3
+		if(Ab_SpdPot == false)
 		spd = 10;
 		jump_impluse = 26;
 	}
@@ -148,6 +156,7 @@ if(xx<0){
 	}
 	if(c1==0 and c2==0){
 		grav = 1.3;
+		if(Ab_SpdPot == false)
 		spd = 10;
 		jump_impluse = 26;
 	}
@@ -162,6 +171,7 @@ else {
 	}	
 	if(c1==0 and c2==0){
 		grav = 1.3;
+		if(Ab_SpdPot == false)
 		spd = 10;
 		jump_impluse = 26;
 	}
