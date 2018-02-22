@@ -5,9 +5,11 @@ Ab_Lightning = false;
 //Attack Collision Mask
 with (instance_create_layer(x,y,"Instances",Obj_PlAttack))
 master = other.id
-//Player Data
+//Bar Data
 Pl_Hp = 200;
 Pl_MaxHp = 200;
+Fb_CdMax = 520;
+Lt_CdMax = 520;
 //Tile Info
 var layr=layer_get_id("Layer_Bound");
 tilemap=layer_tilemap_get_id(layr);

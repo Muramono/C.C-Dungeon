@@ -1,6 +1,11 @@
-
-//Health Var
+if(room == "Rm_CaveLv"){
+xstart = 247;
+ystart = 291;
+}
+//Bar Var's
 PercHel = (Pl_Hp / Pl_MaxHp ) * 100;
+Perc_AbFr = (1-(Fb_Cooldown / Fb_CdMax)) * 100;
+Perc_AbLt = (1-(Lt_Cooldown / Lt_CdMax)) * 100;
 //Animation Changing
 if(!keyboard_check(ord("A")) or !keyboard_check(ord("D"))){
 		if(image_index == 3){
@@ -9,7 +14,7 @@ if(!keyboard_check(ord("A")) or !keyboard_check(ord("D"))){
 	}
 //Lightning Calldown
 if ((keyboard_check(ord("E")) and Lt_Cooldown<1) and Ab_Lightning == true){
-	instance_create_layer(mouse_x,y-128,"La_Fireball",Obj_Lightning);
+	instance_create_layer(mouse_x,y-220,"La_Fireball",Obj_Lightning);
 	Lt_Cooldown = 520;
 }
 //Fireball Creation (Step Pl)
