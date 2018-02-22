@@ -1,6 +1,14 @@
-if(room == "Rm_CaveLv"){
-xstart = 247;
-ystart = 291;
+if(keyboard_check(ord("R"))){
+room_goto(0);
+}
+//Variable Reference
+with(Obj_AbTrack){ 
+if(Ab_FireballRef == true)
+Obj_Player.Ab_Fireball = true;
+}
+with(Obj_AbTrack){
+if(Ab_LightningRef == true)
+Obj_Player.Ab_Lightning = true;
 }
 //Bar Var's
 PercHel = (Pl_Hp / Pl_MaxHp ) * 100;

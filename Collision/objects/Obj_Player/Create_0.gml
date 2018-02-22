@@ -1,3 +1,5 @@
+x = 240;
+y = 240;
 //Ability Booleans
 Ab_SpdPot = false;
 Ab_Fireball = false;

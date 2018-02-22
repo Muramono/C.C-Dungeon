@@ -3,7 +3,7 @@ if(Obj_Skele.image_xscale<0)
 direction = 0
 if(Obj_Skele.image_xscale>0)
 direction = 180;
-speed = 16;
+speed = 25;
 image_angle = direction;
 //Tilemap-Layer Information Pull
 var layr=layer_get_id("Layer_Bound");

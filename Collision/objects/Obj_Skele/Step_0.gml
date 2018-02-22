@@ -9,14 +9,6 @@ x += KnockSpeed;
 if(Obj_Player.x > x)
 x -= KnockSpeed;
 }
-//Jump Impluse
-	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_bottom+1) & tile_index_mask;
-	var c2=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_bottom+1) & tile_index_mask;
-if(c1!=0||c2!=0){
-	if(Obj_Player.y < (y-32) and Obj_Player.y + 400 >= y){
-		v_speedSl = -jump_impluseSl;
-	}
-}
 //Skele Destruction
 if(Sl_Hp <= 0)
 instance_destroy();
