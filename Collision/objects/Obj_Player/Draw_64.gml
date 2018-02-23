@@ -11,5 +11,5 @@ if(Ab_Lightning == true){
 		draw_set_font(Ft_Ab);
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
-		draw_text(754,52,"Q");
+		draw_text_color(752,52,"E",c_black,c_black,c_black,c_black,1);
 }

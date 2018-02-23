@@ -60,7 +60,7 @@ if(Pl_Hp <= 0){
 	image_index = 4;
 	if( image_index == 11)
 	image_index = 4;
-	if((keyboard_check_released(ord("A")) or keyboard_check_released(ord("D"))) and Pl_Hp > 0)
+	if(((keyboard_check_released(ord("A")) or keyboard_check_released(ord("D"))) and Pl_Hp > 0) and !(keyboard_check(ord("A")) or keyboard_check(ord("D"))))
 	image_index = 0;
 //Slashing Switch
 	if(((mouse_check_button_pressed(mb_left)) and Pl_Hp > 0) and (image_index < 12 or image_index > 21))

@@ -1,3 +1,5 @@
+//Local Var
+var L_Hp = Sl_Hp
 xxSl = 0;
 yySl = 0;
 //Knocking Back 
@@ -11,7 +13,7 @@ x -= KnockSpeed;
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_bottom+1) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_bottom+1) & tile_index_mask;
 //Slime Destruction
-if(Sl_Hp <= 0)
+if(L_Hp <= 0)
 instance_destroy();
 if(Obj_Player.x < x and Obj_Player.x + 650 >= x){
 xxSl = -spdSl;

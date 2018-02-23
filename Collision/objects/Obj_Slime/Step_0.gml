@@ -1,3 +1,6 @@
+//Local Var
+var L_Hp = Sl_Hp;
+//Change in x reset
 xxSl = 0;
 //Knocking Back
 if(KnockingBack == true){
@@ -15,7 +18,7 @@ if(c1!=0||c2!=0){
 	}
 }
 //Slime Destruction
-if(Sl_Hp <= 0)
+if (L_Hp <= 0)
 instance_destroy();
 yySl=v_speedSl;
 v_speedSl += gravSl;

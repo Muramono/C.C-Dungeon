@@ -1,3 +1,5 @@
+//Local Var
+var L_Hp = Sl_Hp
 //Image Reset
 if(image_index == 5)
 image_index = 0;
@@ -10,7 +12,7 @@ if(Obj_Player.x > x)
 x -= KnockSpeed;
 }
 //Skele Destruction
-if(Sl_Hp <= 0)
+if(L_Hp <= 0)
 instance_destroy();
 yySl=v_speedSl;
 v_speedSl += gravSl;
