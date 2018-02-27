@@ -1,6 +1,3 @@
-if(keyboard_check(ord("R"))){
-room_goto(0);
-}
 //Variable Reference
 with(Obj_AbTrack){ 
 if(Ab_FireballRef == true)
@@ -53,7 +50,13 @@ if(Pl_Hp <= 0){
 	image_speed = 0;
 	//Death Restart
 	if(keyboard_check(vk_enter)){
-		game_restart();
+		if(room == Rm_CaveLv or room == Rm_Tutorial){
+			room_restart();
+		}
+		else{
+		room_goto(Rm_CaveLv);	
+		}
+		
 	}
 	
 }

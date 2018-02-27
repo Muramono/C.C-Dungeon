@@ -4,10 +4,12 @@ var L_Hp = Sl_Hp;
 xxSl = 0;
 //Knocking Back
 if(KnockingBack == true){
-if(Obj_Player.x < x)
-x += KnockSpeed;
-if(Obj_Player.x > x)
-x -= KnockSpeed;
+	if(Obj_Player.x < x){
+		x += KnockSpeed;
+	}
+	if(Obj_Player.x > x){
+		x -= KnockSpeed;
+	}
 }
 //Jump Impluse
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_bottom+1) & tile_index_mask;
@@ -47,23 +49,24 @@ else {
 }
 //Horizontal collisions
 x += xxSl;
-if(xxSl<0){
+if(xxSl<0 || KnockingBack == true){
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_top) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_bottom) & tile_index_mask;
 	if(c1!=0||c2!=0){
 		x+=((bbox_left+128)& ~127)-bbox_left;
+		KnockingBack = false;
 	}
 }
-else {
+if(xxSl>0 || KnockingBack == true) {
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_top) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_bottom) & tile_index_mask;
 	if(c1!=0||c2!=0){
 		x+=((bbox_right & ~127)-1)-bbox_right;
+		KnockingBack = false;
 	}
 }
 
 //Water Death Collision
-
 
 //Vertical collisions
 if(yySl<0){
