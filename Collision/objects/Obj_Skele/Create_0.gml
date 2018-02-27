@@ -1,3 +1,5 @@
+//Arrow Dmg Bool
+SkeleDmg = false;
 //Knockback Data
 KnockSpeed = 20;
 KnockingBack = false;

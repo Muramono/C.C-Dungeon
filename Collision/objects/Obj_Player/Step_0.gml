@@ -52,8 +52,10 @@ if(Pl_Hp <= 0){
 	if(image_index == 30) 	
 	image_speed = 0;
 	//Death Restart
-	if(keyboard_check(vk_enter))
-	game_restart();	
+	if(keyboard_check(vk_enter)){
+		game_restart();
+	}
+	
 }
 //Walking Switch
 	if((keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D"))) and Pl_Hp > 0) 
