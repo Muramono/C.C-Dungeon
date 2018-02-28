@@ -13,3 +13,11 @@ if(Ab_Lightning == true){
 		draw_set_valign(fa_middle);
 		draw_text_color(752,52,"E",c_black,c_black,c_black,c_black,1);
 }
+//Death Message
+if((image_index >= 22 or image_index <= 30) and Obj_Player.Pl_Hp <= 0){
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_font(Ft_DeathMsg);
+draw_set_color(c_white);
+draw_text_color(922,422,"Better luck next time,\npress enter to restart",c_red,c_red,c_red,c_red,1);
+}

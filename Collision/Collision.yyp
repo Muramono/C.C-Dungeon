@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "1b6374ef-5312-48ab-b2b4-3cd6b7e96dcc",
+            "Value": {
+                "id": "18341286-da86-494c-ad41-803810572e10",
+                "resourcePath": "fonts\\Ft_Normal\\Ft_Normal.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "1c9f648e-6a65-4662-a550-e18b5d1da479",
             "Value": {
                 "id": "553f2e8e-9561-4ddf-8d47-02abbc9e7dd2",

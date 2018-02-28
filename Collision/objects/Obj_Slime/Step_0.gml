@@ -5,10 +5,12 @@ xxSl = 0;
 //Knocking Back
 if(KnockingBack == true){
 	if(Obj_Player.x < x){
-		x += KnockSpeed;
+		xxSl = KnockSpeed;
+		x += xxSl;
 	}
 	if(Obj_Player.x > x){
-		x -= KnockSpeed;
+		xxSl = -KnockSpeed
+		x += xxSl;
 	}
 }
 //Jump Impluse
@@ -25,12 +27,14 @@ instance_destroy();
 yySl=v_speedSl;
 v_speedSl += gravSl;
 y+=yySl;
-if(Obj_Player.x < x and Obj_Player.x + 650 >= x)
-xxSl = -spdSl;
-if(Obj_Player.x > x and Obj_Player.x - 650 <= x)
-xxSl = spdSl;
-if(Obj_Player.x > x-40 and Obj_Player.x < x+40 )
-xxSl = 0;
+if(KnockingBack == false){
+	if(Obj_Player.x < x and Obj_Player.x + 650 >= x)
+		xxSl = -spdSl;
+	if(Obj_Player.x > x and Obj_Player.x - 650 <= x)
+		xxSl = spdSl;
+	if(Obj_Player.x > x-40 and Obj_Player.x < x+40 )
+		xxSl = 0;
+}
 //Vertical collisions
 if(yySl<0){
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_top) & tile_index_mask;
@@ -48,21 +52,26 @@ else {
 	}
 }
 //Horizontal collisions
+if(KnockingBack == false)
 x += xxSl;
-if(xxSl<0 || KnockingBack == true){
+if(xxSl<0){
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_top) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_bottom) & tile_index_mask;
-	if(c1!=0||c2!=0){
+	var c3=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_top/2) & tile_index_mask;
+	if((c1 != 0 or c2 != 0) or c3!=0){
 		x+=((bbox_left+128)& ~127)-bbox_left;
 		KnockingBack = false;
+		xxSl = 0;
 	}
 }
-if(xxSl>0 || KnockingBack == true) {
+if(xxSl>0) {
 	var c1=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_top) & tile_index_mask;
 	var c2=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_bottom) & tile_index_mask;
-	if(c1!=0||c2!=0){
+	var c3=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_top/2) & tile_index_mask;
+	if((c1 != 0 or c2 != 0) or c3 != 0){
 		x+=((bbox_right & ~127)-1)-bbox_right;
 		KnockingBack = false;
+		xxSl = 0;
 	}
 }
 

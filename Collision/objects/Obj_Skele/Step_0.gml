@@ -6,10 +6,14 @@ image_index = 0;
 xxSl = 0;
 //Knocking Back
 if(KnockingBack == true){
-if(Obj_Player.x < x)
-x += KnockSpeed;
-if(Obj_Player.x > x)
-x -= KnockSpeed;
+	if(Obj_Player.x < x){
+		xxSl = KnockSpeed;
+		x += xxSl;
+	}
+	if(Obj_Player.x > x){
+		xxSl = -KnockSpeed
+		x += xxSl;
+	}
 }
 //Skele Destruction
 if(L_Hp <= 0)
