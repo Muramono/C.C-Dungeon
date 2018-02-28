@@ -1,3 +1,5 @@
+//Freeze Movement If
+if(Freeze == false){
 //Variable Reference
 with(Obj_AbTrack){ 
 if(Ab_FireballRef == true)
@@ -193,4 +195,5 @@ else {
 		spd = 10;
 		jump_impluse = 26;
 	}
+}
 }

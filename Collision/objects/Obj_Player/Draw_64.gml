@@ -1,3 +1,4 @@
+if(Freeze = false){
 draw_healthbar(32,32,384,64,PercHel,c_black,c_red,c_lime,0,true,true);
 if(Ab_Fireball == true){
 	draw_healthbar(500,32,650,64,Perc_AbFr,c_black,c_white,c_white,0,true,true);
@@ -20,4 +21,5 @@ draw_set_valign(fa_middle);
 draw_set_font(Ft_DeathMsg);
 draw_set_color(c_white);
 draw_text_color(922,422,"Better luck next time,\npress enter to restart",c_red,c_red,c_red,c_red,1);
+}
 }

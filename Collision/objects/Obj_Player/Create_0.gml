@@ -1,5 +1,15 @@
-x = 240;
-y = 240;
+//x = 240;
+//y = 240;
+//Boss Room Cut Scene
+if(room == Rm_MinoBoss){
+image_speed = 0;
+Freeze = true;
+camera_set_view_target(view_camera[0], Obj_Mino);
+alarm[2] = 390;
+}
+//Freeze Boolean
+if(room != Rm_MinoBoss)
+Freeze = false;
 //Ability Booleans
 Ab_SpdPot = false;
 Ab_Fireball = false;

@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "09eff46e-5080-4fd4-9ee1-14d08c16e1d4",
+            "Value": {
+                "id": "6bbdd6ec-8074-4832-afde-7f5e70e1f541",
+                "resourcePath": "rooms\\Rm_MinoBoss\\Rm_MinoBoss.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0a9bbd42-a66d-4226-b59e-601f958145e6",
             "Value": {
                 "id": "88f34cdc-602f-4929-8404-1c2c37090594",
@@ -68,6 +76,14 @@
                 "id": "ca87e050-4c02-493f-b9a1-17683f0d6f8c",
                 "resourcePath": "views\\11b046d1-8cf7-41b7-ab6f-e317229caf8d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "12b830c0-ab34-4459-abd1-c3dc1432b111",
+            "Value": {
+                "id": "08e8ad38-fc2f-4ee0-bd18-66bee7a27365",
+                "resourcePath": "objects\\Obj_Mino\\Obj_Mino.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -143,6 +159,22 @@
             }
         },
         {
+            "Key": "2ba27170-53ce-4359-a2aa-7f44e45555a0",
+            "Value": {
+                "id": "5ee7e745-f146-4553-a82c-62bb48c3ec49",
+                "resourcePath": "fonts\\Ft_Intro\\Ft_Intro.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "2bd75240-5cbf-46c0-aaad-7c7c3530201c",
+            "Value": {
+                "id": "688d03e3-bdc0-44a6-9ca0-1c0050ea5609",
+                "resourcePath": "objects\\Obj_MinoMsg\\Obj_MinoMsg.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "317a899f-1733-49a1-a20e-995078ebf952",
             "Value": {
                 "id": "b828ce69-bf7e-4d73-91d3-c1a06fac6bee",
@@ -164,6 +196,14 @@
                 "id": "d3846457-8bf1-48e7-85a1-1a69fb24e73c",
                 "resourcePath": "objects\\Obj_Bat\\Obj_Bat.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3a4f1fc0-6d1b-4da1-ae7d-c7885791cad1",
+            "Value": {
+                "id": "8c6f8154-be4d-4ff2-ad9c-221fb55d9895",
+                "resourcePath": "sprites\\Spr_DungeonBack\\Spr_DungeonBack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -199,6 +239,14 @@
             }
         },
         {
+            "Key": "4c4a32c3-086e-44c1-aec7-1fa3e529a1f9",
+            "Value": {
+                "id": "3822bf7a-9620-4bf9-99e5-74b37258174c",
+                "resourcePath": "rooms\\Rm_Intro\\Rm_Intro.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4ccf9db5-7153-4069-9511-5227d89227b1",
             "Value": {
                 "id": "eb9014fb-ca3e-4ece-8c93-cab3f437b767",
@@ -228,6 +276,14 @@
                 "id": "7aefe051-cd0a-4311-994f-59bd9138efb4",
                 "resourcePath": "paths\\path0\\path0.yy",
                 "resourceType": "GMPath"
+            }
+        },
+        {
+            "Key": "627d5789-50a1-4c58-81ca-c2e16803e417",
+            "Value": {
+                "id": "02506dbf-c5aa-4c09-b8a9-c166dc616654",
+                "resourcePath": "objects\\Obj_Intro\\Obj_Intro.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -276,6 +332,14 @@
                 "id": "8e810e7e-1e9b-4d75-b26c-911a83911387",
                 "resourcePath": "sprites\\Spr_Heart\\Spr_Heart.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "716197f2-86bd-42fa-9dcb-6bb70b9a02ae",
+            "Value": {
+                "id": "343b188b-7f31-4f86-8c6c-dae218dffdbc",
+                "resourcePath": "views\\716197f2-86bd-42fa-9dcb-6bb70b9a02ae.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -396,6 +460,14 @@
                 "id": "48de6332-c814-443c-a6e4-0cbc5ed1464c",
                 "resourcePath": "views\\95d60406-b6ee-4a99-aa56-1669d8d00187.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "96e717fc-1bd2-42e6-bb21-80fdc9de72b2",
+            "Value": {
+                "id": "59fcd878-2a90-4239-b101-19c2e1cceefb",
+                "resourcePath": "objects\\Obj_IntroPlayer\\Obj_IntroPlayer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
