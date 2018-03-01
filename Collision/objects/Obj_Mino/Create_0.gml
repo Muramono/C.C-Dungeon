@@ -1,7 +1,9 @@
 //Knockback Data
 KnockSpeed = 20;
 KnockingBack = false;
-//Slime Data
+//Mino Data
+RamCd = 0;
+CutScene = true;
 JumpCooldown = 0;
 Sl_Hp = 120;
 //Tile Info
