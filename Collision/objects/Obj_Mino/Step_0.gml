@@ -1,13 +1,13 @@
 xxSl = 0;
 //Movement Pattern
 //Mino Dash Ram
-	if((Obj_Player.x < x and Obj_Player.x + 650 >= x) and RamCd <= 0){
+	if((Obj_Player.x < x and Obj_Player.x + 850 >= x) and RamCd <= 0){
 		if(image_xscale > 0)
 		image_xscale *= -1;
 		image_speed = 3;
 		xxSl = -spdRush;
 	}
-	if((Obj_Player.x > x and Obj_Player.x - 650 <= x) and RamCd <= 0){
+	if((Obj_Player.x > x and Obj_Player.x - 850 <= x) and RamCd <= 0){
 		if(image_xscale < 0)
 		image_xscale *= -1;
 		image_speed = 3;
@@ -23,12 +23,13 @@ x += xxSl;
 if(RamCd > 0)
 RamCd -= 1;
 //Normal Back And Forth
-/*
-if(x > 6080 and CutScene == false){
+if(inst_6626E155){
+	if(x > 6080 and CutScene == false){
 	xxSl = -spdSl;
 	x += xxSl;
+	}
 }
-*/
+
 //Rush Movement
 if(Obj_Player.x < x and Obj_Player.x + 650 >= x){ 
 	alarm[0] = 50;
