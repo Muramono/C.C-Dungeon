@@ -1,3 +1,8 @@
+//Skele Direction 
+if(Obj_Player.x > x)
+Right = true;
+if(Obj_Player.x < x)
+Right = false;
 //Local Var
 var L_Hp = Sl_Hp
 //Image Reset
@@ -30,6 +35,7 @@ image_xscale *= -1;
 //Arrow Stance Change
 	if((Obj_Player.x + 400 >= x and image_index < 6) and (Obj_Player.y + 10 >= y and Obj_Player.y - 10 <= y)){
 		xxSl = 0;
+		Right = false;
 		image_speed = .1;
 		image_index = 6;
 	}
@@ -49,6 +55,7 @@ image_xscale *= -1;
 //Arrow Stance Change
 	if(Obj_Player.x - 400 <= x and image_index < 6 and (Obj_Player.y + 10 >= y and Obj_Player.y - 10 <= y)){
 		xxSl = 0;
+		Right = true;
 		image_speed = .1;
 		image_index = 6;
 	}

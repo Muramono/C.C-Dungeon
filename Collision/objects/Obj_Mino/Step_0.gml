@@ -1,39 +1,143 @@
 xxSl = 0;
+//Mino Death
+if(Mino_Hp <= 0)
+instance_destroy();
+//Mino Animatoins
+
+if(Mino_Attack == false){
+	if(image_index == 6)
+	image_index = 0;
+	
+}
+
 //Movement Pattern
 //Mino Dash Ram
-	if((Obj_Player.x < x and Obj_Player.x + 850 >= x) and RamCd <= 0){
-		if(image_xscale > 0)
-		image_xscale *= -1;
-		image_speed = 3;
-		xxSl = -spdRush;
+
+if(MinoStartX > 5650){ //Checks to see if Minotaur is on the right side
+	if(Obj_Player.x >= 6080 and Mino_Attack == false){
+		if((Obj_Player.x < x and Obj_Player.x + 850 >= x) and RamCd <= 0){
+			if(image_xscale > 0)
+				image_xscale *= -1;
+			image_speed = 3;
+			xxSl = -spdRush;
+			StepNum += xxSl
+		}
+		if((Obj_Player.x > x and Obj_Player.x - 850 <= x) and RamCd <= 0){
+			if(image_xscale < 0)
+				image_xscale *= -1;
+			image_speed = 3;
+			xxSl = spdRush;
+			StepNum += xxSl;
+		}
+		if(Obj_Player.x > x-40 and Obj_Player.x < x+40){
+			Mino_Attack = true;
+			RamCd = 250
+			xxSl = 0;
+		}
 	}
-	if((Obj_Player.x > x and Obj_Player.x - 850 <= x) and RamCd <= 0){
-		if(image_xscale < 0)
-		image_xscale *= -1;
-		image_speed = 3;
-		xxSl = spdRush;
+	//Animation Attack
+	if(Mino_Attack == true and image_index < 7){
+		image_speed = .7;
+		image_index = 7;
 	}
-	if(Obj_Player.x > x-40 and Obj_Player.x < x+40){
-		RamCd = 250
-		image_index = 0;
-		image_speed = 0;
-		xxSl = 0;
+	if(image_index >= 12){
+	Mino_Attack = false;
+	image_index = 0; 
+	image_speed = 1;
 	}
 x += xxSl;
 if(RamCd > 0)
 RamCd -= 1;
+
 //Normal Back And Forth
-if(inst_6626E155){
-	if(x > 6080 and CutScene == false){
-	xxSl = -spdSl;
-	x += xxSl;
+	if(!CutScene and !Mino_Attack){
+		if(WalkBack == false){
+		xxSl = -spdSl;
+		if(image_xscale > 0)
+		image_xscale *= -1;
+		x += xxSl;
+		StepNum += xxSl;	
+		}
+		if(StepNum <= 0){
+			image_xscale *= -1;
+			WalkBack = true;
+		}
+		if(WalkBack == true){
+			xxSl = spdSl;
+			if(image_xscale < 0)
+			image_xscale *= -1;
+			x += xxSl;
+			StepNum += xxSl;
+		}
+		if(StepNum >= 2550){
+			image_xscale *= -1;
+			WalkBack = false;
+		}
+	}
+}
+if(MinoStartX < 3500){
+		if(Obj_Player.x <= 3120 and Mino_Attack == false){
+		if((Obj_Player.x < x and Obj_Player.x + 850 >= x) and RamCd <= 0){
+			if(image_xscale > 0)
+				image_xscale = -1;
+			image_speed = 3;
+			xxSl = -spdRush;
+			StepNum -= xxSl
+		}
+		if((Obj_Player.x > x and Obj_Player.x - 850 <= x) and RamCd <= 0){
+			if(image_xscale < 0)
+				image_xscale *= -1;
+			image_speed = 3;
+			xxSl = spdRush;
+			StepNum -= xxSl;
+		}
+		if(Obj_Player.x > x-40 and Obj_Player.x < x+40){
+			Mino_Attack = true;
+			RamCd = 250
+			xxSl = 0;
+		}
+	}
+	//Animation Attack
+	if(Mino_Attack == true and image_index < 7){
+		image_speed = .7;
+		image_index = 7;
+	}
+	if(image_index >= 12){
+	Mino_Attack = false;
+	image_index = 0; 
+	image_speed = 1;
+	}
+x += xxSl;
+if(RamCd > 0)
+RamCd -= 1;
+
+//Normal Back And Forth
+	if(!CutScene and !Mino_Attack){
+		if(WalkBack == false){
+		xxSl = spdSl;
+		if(image_xscale < 0)
+		image_xscale *= -1;
+		x += xxSl;
+		StepNum -= xxSl;	
+		}
+		if(StepNum <= 0){
+			image_xscale *= -1;
+			WalkBack = true;
+		}
+		if(WalkBack == true){
+			xxSl = -spdSl;
+			if(image_xscale > 0)
+			image_xscale *= -1;
+			x += xxSl;
+			StepNum -= xxSl;
+		}
+		if(StepNum >= 2250){
+			image_xscale *= -1;
+			WalkBack = false;
+		}
 	}
 }
 
-//Rush Movement
-if(Obj_Player.x < x and Obj_Player.x + 650 >= x){ 
-	alarm[0] = 50;
-}
 //Grav and Fall 
 yySl=v_speedSl;
 v_speedSl += gravSl;
@@ -61,8 +165,6 @@ if(xxSl<0){
 	var c3=tilemap_get_at_pixel(tilemapSl,bbox_left,bbox_top/2) & tile_index_mask;
 	if((c1 != 0 or c2 != 0) or c3!=0){
 		x+=((bbox_left+128)& ~127)-bbox_left;
-		KnockingBack = false;
-		xxSl = 0;
 	}
 }
 if(xxSl>0) {
@@ -71,8 +173,7 @@ if(xxSl>0) {
 	var c3=tilemap_get_at_pixel(tilemapSl,bbox_right,bbox_top/2) & tile_index_mask;
 	if((c1 != 0 or c2 != 0) or c3 != 0){
 		x+=((bbox_right & ~127)-1)-bbox_right;
-		KnockingBack = false;
-		xxSl = 0;
+
 	}
 }
 

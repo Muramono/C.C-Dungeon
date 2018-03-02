@@ -6,7 +6,8 @@
     "children": [
         "627d5789-50a1-4c58-81ca-c2e16803e417",
         "2bd75240-5cbf-46c0-aaad-7c7c3530201c",
-        "27f1442c-2026-4237-9c56-df3f9a5f960b"
+        "27f1442c-2026-4237-9c56-df3f9a5f960b",
+        "5a934912-0e81-485e-85b3-7d7ea3c5682f"
     ],
     "filterType": "GMObject",
     "folderName": "TextObjects",

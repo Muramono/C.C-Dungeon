@@ -1,9 +1,14 @@
 //Create Event (Fireball)
-if(Obj_Skele.image_xscale<0)
-direction = 0
-if(Obj_Skele.image_xscale>0)
+if(Obj_Skele.Right == false){
+image_xscale = 1;
+direction = 360
+speed = -25;
+}
+if(Obj_Skele.Right == true){
+image_xscale = -1;
 direction = 180;
 speed = 25;
+}
 image_angle = direction;
 //Tilemap-Layer Information Pull
 var layr=layer_get_id("Layer_Bound");

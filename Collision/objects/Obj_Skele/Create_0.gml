@@ -3,7 +3,8 @@ SkeleDmg = false;
 //Knockback Data
 KnockSpeed = 20;
 KnockingBack = false;
-//Slime Data
+//Skele Data
+Right = true;
 JumpCooldown = 0;
 Sl_Hp = 60;
 //Tile Info

@@ -2,10 +2,14 @@
 KnockSpeed = 20;
 KnockingBack = false;
 //Mino Data
+MinoDmg = false;
+MinoStartX = x;
+WalkBack = false;
+Mino_Attack = false;
 RamCd = 0;
 CutScene = true;
 JumpCooldown = 0;
-Sl_Hp = 120;
+Mino_Hp = 450;
 //Tile Info
 var layr=layer_get_id("Layer_Bound");
 tilemapSl=layer_tilemap_get_id(layr);
@@ -13,11 +17,12 @@ tilemapSl=layer_tilemap_get_id(layr);
 var layrS=layer_get_id("Layer_Slow");
 tilemapS=layer_tilemap_get_id(layrS);
 //Player Grav/Move Info
+StepNum = 2550;
 spdSl=3
 spdRush=20;
 xxSl=0;
 yySl=0;
-sprMaskSl=Spr_Slime;
+sprMaskSl=Spr_Minotaur;
 v_speedSl = 0;
 jump_impluseSl=23;
 gravSl = 1.3;

@@ -1,3 +1,9 @@
+//Boss Room Tele
+if(room == Rm_MinoBoss){
+	if(!instance_exists(Obj_Mino)){
+		room_goto_next();
+	}
+}
 //Freeze Movement If
 if(Freeze == false){
 //Variable Reference

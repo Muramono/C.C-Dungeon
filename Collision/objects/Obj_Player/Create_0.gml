@@ -1,10 +1,12 @@
-//x = 240;
-//y = 240;
+//Soundtrack
+//Music Tracks
 //Boss Room Cut Scene
 if(room == Rm_MinoBoss){
+audio_stop_all();
 image_speed = 0;
 Freeze = true;
-camera_set_view_target(view_camera[0], Obj_Mino);
+camera_set_view_target(view_camera[0], inst_6626E155);
+alarm[5] = 5;
 alarm[2] = 390;
 }
 //Freeze Boolean
